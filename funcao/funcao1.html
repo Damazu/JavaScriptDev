@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>funcao 1</title>
+    <script>
+//*parte quase toda errada*//
+   function opiniao(){
+
+   }
+
+    var qtdidade = [];
+    var idade1 = 0;
+    var idade2 = 0;
+    var idade3 = 0;
+    var opiniao1 = 0;
+    var opiniao2 = 0;
+    var opiniao3 = 0;
+    var opiniao =[];
+    qtdopiniao = 0;
+    
+    
+
+    for(i = 0;i <= 9; i++){
+        
+    var idade = parseFloat(prompt("Digite a sua idade"));
+    
+        var opiniao = prompt("Digite sua opinião em regular-1 bom-2 otimo-3");
+        
+        switch(opiniao){
+        case '1':
+            qtdidade.push(idade)
+            idade1 = idade1 + idade;
+            opiniao = ('1');
+            opiniao1 = qtdopiniao + opiniao1;
+            opiniao1++;
+            break;
+        case'2':
+            qtdidade.push(idade)
+            idade2 = idade2 + idade;
+            opiniao = ('2');
+            opiniao2 = qtdopiniao + opiniao2;
+            opiniao2++;
+            break;
+        case'3':
+            qtdidade.push(idade)
+            idade3 = idade3 + idade;
+            opiniao = ('3');
+            opiniao3 = qtdopiniao + opiniao3;
+            opiniao3++;
+            break;
+        default:
+            alert("Opção Inválida");
+            break;        
+        }
+    
+        
+    }
+    //parte certa//
+    var mediaOtimo = parseFloat((idade3 / opiniao3).toFixed(2));
+    alert("Idade media das pessoas que deram otimo " + mediaOtimo);
+    alert("Quantidade de opinioes regulares " + opiniao1);
+    porcentagem = parseFloat((opiniao2 / i) *100 );   
+    alert("Porcentagem de pessoas que responderam bom " + porcentagem + "%");
+
+    </script>
+</head>
+<body>
+    <h1>Funcao 1</h1>
+</body>
+</html>

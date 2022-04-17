@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Funcao 3</title>
+    <script>
+    function calcular(){
+  
+    var argumento1 = 0;
+    var argumento2 = 0;
+    var argumento3 = 0;
+    var argumento4 = 0;
+    var argumento5 = 0;
+    } 
+
+    argumento1 = prompt("Digite a sua nota do primeiro bimestre");
+    argumento1 = eval(argumento1);
+
+    argumento2 = prompt("Digite a sua nota do segundo bimestre");
+    argumento2 = eval(argumento2);
+
+    argumento3 = prompt("Digite a sua nota do terceiro bimestre");
+    argumento3 = eval(argumento3);
+
+    argumento4 = prompt("Digite a sua nota do quarto bimestre");
+    argumento4 = eval(argumento4);
+
+    soma = argumento1 + argumento2 + argumento3 + argumento4;
+   
+    if(soma < 40){
+        alert("Reprovado");
+    }else if(soma >= 60){
+        alert("Aprovado")
+    }else{
+        if((soma >= 40) && (soma < 60)){
+            argumento5 = prompt("Digite a sua nota de recuperacao")
+            argumento5 = eval(argumento5)
+        }
+        if(argumento5 < 60){
+        alert("Reprovado");
+        }else{
+        alert("Aprovado")
+    }
+    }
+
+    </script>        
+</head>
+<body>
+    <h1>Funcao 3</h1>
+</body>
+</html>
