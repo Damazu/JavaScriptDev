@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>array 1</title>
+    <script>
+        //parte 1
+        var vetnum=[] , x = 0 , vetpositivo = [], retorno = 0;
+       
+        
+        while (x < 10){
+            vetnum[x]= parseInt(prompt('Digite um numero'));
+            x++;
+        }
+       
+       function posito(vetnum){
+        
+            for(i=0; i < 10;i++){
+                if(vetnum[i] > 0){
+                    vetpositivo[i] = vetnum[i];
+                }
+            
+            }
+            return(vetpositivo)
+        }
+        retorno = posito(vetnum);
+        
+        for(i = 0; i < 10;i++){
+        alert(retorno[i])
+        console.log(retorno[i])
+        }
+        //parte 2
+        var numaior = Math.max.apply(null, vetnum)
+        alert('o maior numero é ' +numaior)
+        
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

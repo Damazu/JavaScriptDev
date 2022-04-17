@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>array 4</title>
+    <script>
+       
+       function crescente(a, b){
+            return a > b;
+        }
+       var numero = [], x= 0 ;
+
+       while(x < 10){   
+            numero = parseInt(prompt('Digite um numero'));
+            x++;
+        }
+        
+        var numordem = numero.sort(crescente);
+
+        for(var i = 0; i < numordem.length; i++){
+            console.log(numordem[i] + '<br>') 
+        }
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
