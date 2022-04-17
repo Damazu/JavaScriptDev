@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercicio array 4</title>
+    <script>
+        //atividade 4
+    const produtos = [
+        { id: 1, categoria: "limpeza", name: "Amaciante" },
+        { id: 2, categoria: "limpeza", name: "Detergente" },
+        { id: 3, categoria: "alimento", name: "ovo" },
+        { id: 4, categoria: "alimento", name: "alface" }]
+        
+        const array_id = produtos.map(produtos => produtos.id)
+        console.log(array_id)
+
+        //atividade 5
+        const array_categoria = produtos.filter(produtos => produtos.categoria === "limpeza")
+        console.log(array_categoria)
+        
+        //atividade 6
+        const array_alimentos = produtos
+        .filter(produtos => produtos.categoria === "alimento")
+        .map(produtos => produtos.id)
+        console.log(array_alimentos)
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

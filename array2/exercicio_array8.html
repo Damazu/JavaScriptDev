@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercicio array 8</title>
+    <script>
+        //atividade 8
+    const fucionarios = [
+        { name: "Han Solo", departamento: "Financeiro", salario: 5000 },
+        { name: "Luke", departamento: "Financeiro", salario: 15000 },
+        { name: "Ben", departamento: "Marketing", salario: 2000 },
+        { name: "Leia", departamento: "Marketing", salario: 10000 },
+        { name: "Rey", departamento: "Financeiro", salario: 2500 }];
+        //parte 1
+        const array_financas = fucionarios.filter(fucionarios => fucionarios.departamento === "Financeiro");
+        console.log(array_financas);
+        
+        //parte 2
+        const valor_aumento = array_financas.map(array_financas => array_financas.salario * 0.5 * 3 );
+        console.log(valor_aumento[0]);
+        console.log(valor_aumento[1]);
+        console.log(valor_aumento[2]);
+
+        //parte 3
+        const array_soma = valor_aumento[0] + valor_aumento[1] + valor_aumento[2]
+        console.log("A somatória total dos sálarios é de R$" + array_soma);
+
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

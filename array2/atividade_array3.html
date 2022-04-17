@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>atividade array 3</title>
+    <script>
+    var habilidades = [];
+    for (var i = 0; habilidades[i - 1] != 100; i++)
+    habilidades.push(prompt("informe suas habilidades"))
+    if(habilidades[i-1] == 100){
+        habilidades.pop();
+    }
+    alert(temHabilidade(habilidades));
+    console.log(temHabilidade(habilidades))
+function temHabilidade(habilidades) {
+    if(habilidades.indexOf("Javascript", 0) == "0"){
+        return(true)
+    }else{
+        return(false)
+    }
+
+    }
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

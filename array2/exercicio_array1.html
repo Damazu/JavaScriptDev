@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>exercicio array 1</title>
+     <script>
+         //atividade 1
+         var num1 = [];
+         var num2 = [];
+
+         var qntdarray = 0;
+            qntdarray = parseInt(prompt("Digite a quantidede de numeros que terá nos 2 vetores"))
+
+        for(i=0;i<qntdarray;i++){
+            num1.push(parseFloat(prompt("Digite o primeiro numero")))
+            num2.push(parseFloat(prompt("Digite o segundo numero")))
+        }
+        console.log(num1)
+        console.log(num2)
+
+        var contatenar = num1.concat(num2)
+        console.log(contatenar)
+
+        organizar = contatenar.sort(function(a,b){
+            return a - b
+        })
+
+        let maior = contatenar.pop(0,6)
+        let menor = contatenar.shift()
+        console.log(contatenar)
+
+        //atividade 2 
+
+        var verificar = prompt("Verifique seu numero desejado")
+
+        function Verifique(verificar){
+            if(verificar == contatenar){
+                console.log("O valor existe no array")
+            }else{
+                console.log("O valor não existe no array")
+            }
+        }
+
+        const achar = contatenar.find(Verifique)
+        
+</script>
+</head>
+<body>
+    
+</body>
+</html>

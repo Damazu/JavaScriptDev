@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercicio array 7</title>
+    <script>
+        //atividade 7
+    const produtos = [
+        {name: "Bola de Vôlei", preco: 100 },
+        {name: "Detergente", preco: 30 },
+        {name: "Desodorante", preco: 45 },
+        {name: "Playstation",  preco: 4500 }];
+
+        const array_valor = produtos.map(produtos => produtos.preco)
+        let num1 = array_valor[0] - (array_valor[0]*0.1)
+        let num2 = array_valor[1] - (array_valor[1]*0.1)
+        let num3 = array_valor[2] - (array_valor[2]*0.1)
+        let num4 = array_valor[3] - (array_valor[3]*0.1)
+        
+        var alter_produto = produtos.splice(0,1,num1)
+        var alter_produto = produtos.splice(1,1,num2)
+        var alter_produto = produtos.splice(2,1,num3)
+        var alter_produto = produtos.splice(3,1,num4)
+        console.log(produtos)
+        
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
