@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Evento 2.1</title>
+    
+<body id=alterado>
+    
+        <button>Vermelho</button>
+        <button>Verde</button>
+        <button>Azul</button>
+        <button>Amarelo</button>
+    
+    <script>
+    
+        var vermelhor = document.querySelectorAll('button')[0]
+        var verdem = document.querySelectorAll('button')[1]
+        var azulado = document.querySelectorAll('button')[2]
+        var amarelado = document.querySelectorAll('button')[3]
+
+
+
+    vermelhor.onclick = function(){
+        var element = document.getElementById("alterado")
+        element.style.backgroundColor = 'red'
+    }
+    verdem.onclick = function(){
+        var element = document.getElementById("alterado")
+        element.style.backgroundColor = 'green'
+    }
+    azulado.onclick = function(){
+        var element = document.getElementById("alterado")
+        element.style.backgroundColor = 'blue'
+    }
+    amarelado.onclick = function(){
+        var element = document.getElementById("alterado")
+        element.style.backgroundColor = 'yellow'
+    }
+    
+    </script>
+</body>
+</html>

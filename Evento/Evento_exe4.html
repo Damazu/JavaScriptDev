@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Evento 4</title>
+</head>
+<body>
+    
+    <p id="paragrafo">
+        Era uma vez um Paladino que nunca se mostrou ser forte mas um dia ele conseguiu matar um dragão fim
+    </p>
+    <button>Ocultar/Mostrar</button>
+    <script>
+
+    var esconde = document.querySelectorAll('button')[0];
+    
+    esconde.onclick = function(){
+       
+        var element = document.getElementById("paragrafo")
+        if(element.style.color == 'black'){
+        element.style.color = 'transparent'
+       }else{
+        element.style.color = 'black'
+       }
+    }
+    
+    </script>
+</body>
+</html>

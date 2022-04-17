@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Evento 1</title>
+</head>
+
+    <label for="valorA">Valor de A:</label>
+    <input type="number" id="valorA" name="valorA"><br><br>
+    <label for="valorB">Valor de B:</label>
+    <input type="number" id="valorB" name="valorB"><br><br>
+    <button type="submit" id="somar">Somar</button>
+
+<script>
+
+var somar =  document.querySelectorAll('button')[0];
+
+
+somar.onclick = function()
+{
+var valorA = parseInt(document.querySelectorAll('input')[0].value);
+var valorB= parseInt(document.querySelectorAll('input')[1].value); 
+
+console.log(valorA  + valorB)
+}
+</script>
+</body>
+</html>

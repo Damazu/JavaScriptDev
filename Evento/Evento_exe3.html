@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Evento 3</title>
+    
+<body>
+
+    <select id="cor" name="cor">
+        <option class="opt">Escolha</option>
+        <option class="opt">Vermelho</option>
+        <option class="opt">Verde</option>
+        <option class="opt">Azul</option>
+        <option class="opt">Amarelo</option>
+    </select>
+    <script>
+    let opt = document.querySelectorAll(".opt");
+        let teste = document.querySelector("#cor");
+        let body = document.body;
+
+        body.style.background = "white";
+
+        teste.onclick =() => {
+            if (opt[0].selected) {
+                body.style.background = "white";
+            }
+
+            else if (opt[1].selected) {
+                body.style.background = "red";
+            }
+
+            else if (opt[2].selected) {
+                body.style.background = "green";
+            }
+
+            else if (opt[3].selected) {
+                body.style.background = "blue";
+            }
+            else if (opt[4].selected) {
+                body.style.background = "yellow";
+            }
+        }
+    </script>
+</body>
+</html>

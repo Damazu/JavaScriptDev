@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Evento 2.2
+    </title>
+    
+<body id=alterado>
+    <a id="vermelho">Vermelho</a><br>
+    <a id="verde">Verde</a><br>
+    <a id="azul">Azul</a><br>
+    <a id="amarelo">Amarelo</a>
+
+    <script>
+
+    var link1 = document.querySelectorAll('a')[0]
+    var link2 = document.querySelectorAll('a')[1]
+    var link3 = document.querySelectorAll('a')[2]
+    var link4 = document.querySelectorAll('a')[3]
+    
+    link1.onmouseover = function(){
+        var element = document.getElementById("alterado")
+        element.style.backgroundColor = 'red'
+    }
+    link2.onmouseover = function(){
+        var element = document.getElementById("alterado")
+        element.style.backgroundColor = 'green'
+    }
+    link3.onmouseover = function(){
+        var element = document.getElementById("alterado")
+        element.style.backgroundColor = 'blue'
+    }
+    link4.onmouseover = function(){
+        var element = document.getElementById("alterado")
+        element.style.backgroundColor = 'yellow'
+    }
+    
+    </script>
+</body>
+</html>
