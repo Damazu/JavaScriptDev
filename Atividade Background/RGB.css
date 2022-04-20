@@ -1,0 +1,16 @@
+p{
+    position: relative;
+    left: 150px;
+    top: -40px;
+    border: 1px solid;
+    border-radius: 4px;
+    width: 30px;
+}
+.posicao1{
+    position: relative;
+    top: -40px;
+}
+.posicao2{
+    position: relative;
+    top: -80px;
+}
